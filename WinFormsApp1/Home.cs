@@ -19,6 +19,9 @@ namespace WinFormsApp1
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
+            Doctor obj = new Doctor();
+            obj.Show();
+            this.Hide();
 
         }
 
@@ -32,8 +35,15 @@ namespace WinFormsApp1
 
         private void CrossBtn_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
             //this 
+        }
+
+        private void PatientBtn_Click(object sender, EventArgs e)
+        {
+            patient obj = new patient();
+            obj.Show();
+            this.Hide();
         }
     }
 }

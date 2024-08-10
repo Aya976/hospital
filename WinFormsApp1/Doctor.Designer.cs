@@ -30,17 +30,14 @@
         {
             pictureBox2 = new PictureBox();
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            comboBox1 = new ComboBox();
-            dataGridView1 = new DataGridView();
+            licenceTextBox = new TextBox();
+            expTextBox = new TextBox();
+            doctorNameTextBox = new TextBox();
+            GenderComboBox = new ComboBox();
             DelBtn = new Button();
             AddBtn = new Button();
             UpdateBtn = new Button();
@@ -48,15 +45,15 @@
             HomeBtn = new Button();
             CrossBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.doctor;
-            pictureBox2.Location = new Point(-3, 1);
+            pictureBox2.Location = new Point(-5, 2);
+            pictureBox2.Margin = new Padding(5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(150, 118);
+            pictureBox2.Size = new Size(244, 189);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -65,29 +62,21 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft JhengHei UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(153, 76);
+            label1.Location = new Point(249, 122);
+            label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(167, 43);
+            label1.Size = new Size(258, 67);
             label1.TabIndex = 5;
             label1.Text = "DOCTOR";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(23, 165);
-            label2.Name = "label2";
-            label2.Size = new Size(53, 38);
-            label2.TabIndex = 6;
-            label2.Text = " ID";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(200, 165);
+            label3.Location = new Point(325, 264);
+            label3.Margin = new Padding(5, 0, 5, 0);
             label3.Name = "label3";
-            label3.Size = new Size(225, 38);
+            label3.Size = new Size(353, 60);
             label3.TabIndex = 7;
             label3.Text = " DOCTOR NAME";
             // 
@@ -95,9 +84,10 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(459, 165);
+            label4.Location = new Point(746, 264);
+            label4.Margin = new Padding(5, 0, 5, 0);
             label4.Name = "label4";
-            label4.Size = new Size(133, 38);
+            label4.Size = new Size(207, 60);
             label4.TabIndex = 8;
             label4.Text = " GENDER";
             // 
@@ -105,9 +95,10 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(668, 165);
+            label5.Location = new Point(1086, 264);
+            label5.Margin = new Padding(5, 0, 5, 0);
             label5.Name = "label5";
-            label5.Size = new Size(306, 38);
+            label5.Size = new Size(479, 60);
             label5.TabIndex = 9;
             label5.Text = "YEARS OF EXPERIENCE";
             // 
@@ -115,63 +106,49 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(1046, 165);
+            label6.Location = new Point(1700, 264);
+            label6.Margin = new Padding(5, 0, 5, 0);
             label6.Name = "label6";
-            label6.Size = new Size(390, 38);
+            label6.Size = new Size(613, 60);
             label6.TabIndex = 10;
             label6.Text = "MEDICAL LICENSCE NUMBER";
             // 
-            // textBox1
+            // licenceTextBox
             // 
-            textBox1.BackColor = SystemColors.ButtonHighlight;
-            textBox1.Location = new Point(12, 215);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(155, 27);
-            textBox1.TabIndex = 11;
+            licenceTextBox.BackColor = SystemColors.ButtonHighlight;
+            licenceTextBox.Location = new Point(1700, 344);
+            licenceTextBox.Margin = new Padding(5);
+            licenceTextBox.Name = "licenceTextBox";
+            licenceTextBox.Size = new Size(631, 39);
+            licenceTextBox.TabIndex = 12;
             // 
-            // textBox4
+            // expTextBox
             // 
-            textBox4.BackColor = SystemColors.ButtonHighlight;
-            textBox4.Location = new Point(1046, 215);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(390, 27);
-            textBox4.TabIndex = 12;
+            expTextBox.BackColor = SystemColors.ButtonHighlight;
+            expTextBox.Location = new Point(1086, 344);
+            expTextBox.Margin = new Padding(5);
+            expTextBox.Name = "expTextBox";
+            expTextBox.Size = new Size(495, 39);
+            expTextBox.TabIndex = 13;
             // 
-            // textBox3
+            // doctorNameTextBox
             // 
-            textBox3.BackColor = SystemColors.ButtonHighlight;
-            textBox3.Location = new Point(668, 215);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(306, 27);
-            textBox3.TabIndex = 13;
+            doctorNameTextBox.BackColor = SystemColors.ButtonHighlight;
+            doctorNameTextBox.Location = new Point(325, 344);
+            doctorNameTextBox.Margin = new Padding(5);
+            doctorNameTextBox.Name = "doctorNameTextBox";
+            doctorNameTextBox.Size = new Size(363, 39);
+            doctorNameTextBox.TabIndex = 15;
             // 
-            // textBox2
+            // GenderComboBox
             // 
-            textBox2.BackColor = SystemColors.ButtonHighlight;
-            textBox2.Location = new Point(200, 215);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(225, 27);
-            textBox2.TabIndex = 15;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "MALE", "FEMALE " });
-            comboBox1.Location = new Point(459, 214);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 28);
-            comboBox1.TabIndex = 16;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.BackgroundColor = SystemColors.GradientActiveCaption;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.GridColor = SystemColors.GradientActiveCaption;
-            dataGridView1.Location = new Point(23, 280);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1426, 358);
-            dataGridView1.TabIndex = 17;
+            GenderComboBox.FormattingEnabled = true;
+            GenderComboBox.Items.AddRange(new object[] { "MALE", "FEMALE " });
+            GenderComboBox.Location = new Point(746, 342);
+            GenderComboBox.Margin = new Padding(5);
+            GenderComboBox.Name = "GenderComboBox";
+            GenderComboBox.Size = new Size(214, 40);
+            GenderComboBox.TabIndex = 16;
             // 
             // DelBtn
             // 
@@ -179,9 +156,10 @@
             DelBtn.FlatStyle = FlatStyle.Popup;
             DelBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DelBtn.ForeColor = SystemColors.ButtonHighlight;
-            DelBtn.Location = new Point(445, 644);
+            DelBtn.Location = new Point(723, 1030);
+            DelBtn.Margin = new Padding(5);
             DelBtn.Name = "DelBtn";
-            DelBtn.Size = new Size(125, 56);
+            DelBtn.Size = new Size(203, 90);
             DelBtn.TabIndex = 18;
             DelBtn.Text = "DELETE";
             DelBtn.UseVisualStyleBackColor = false;
@@ -192,12 +170,14 @@
             AddBtn.FlatStyle = FlatStyle.Popup;
             AddBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AddBtn.ForeColor = SystemColors.ButtonHighlight;
-            AddBtn.Location = new Point(23, 644);
+            AddBtn.Location = new Point(37, 1030);
+            AddBtn.Margin = new Padding(5);
             AddBtn.Name = "AddBtn";
-            AddBtn.Size = new Size(125, 56);
+            AddBtn.Size = new Size(203, 90);
             AddBtn.TabIndex = 19;
             AddBtn.Text = "ADD";
             AddBtn.UseVisualStyleBackColor = false;
+            AddBtn.Click += AddBtn_Click;
             // 
             // UpdateBtn
             // 
@@ -205,9 +185,10 @@
             UpdateBtn.FlatStyle = FlatStyle.Popup;
             UpdateBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UpdateBtn.ForeColor = SystemColors.ButtonHighlight;
-            UpdateBtn.Location = new Point(234, 644);
+            UpdateBtn.Location = new Point(380, 1030);
+            UpdateBtn.Margin = new Padding(5);
             UpdateBtn.Name = "UpdateBtn";
-            UpdateBtn.Size = new Size(125, 56);
+            UpdateBtn.Size = new Size(203, 90);
             UpdateBtn.TabIndex = 20;
             UpdateBtn.Text = "UPDATE";
             UpdateBtn.UseVisualStyleBackColor = false;
@@ -218,9 +199,10 @@
             ResetBtn.FlatStyle = FlatStyle.Popup;
             ResetBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ResetBtn.ForeColor = SystemColors.ButtonHighlight;
-            ResetBtn.Location = new Point(685, 644);
+            ResetBtn.Location = new Point(1113, 1030);
+            ResetBtn.Margin = new Padding(5);
             ResetBtn.Name = "ResetBtn";
-            ResetBtn.Size = new Size(125, 56);
+            ResetBtn.Size = new Size(203, 90);
             ResetBtn.TabIndex = 21;
             ResetBtn.Text = "RESET";
             ResetBtn.UseVisualStyleBackColor = false;
@@ -231,9 +213,10 @@
             HomeBtn.FlatStyle = FlatStyle.Popup;
             HomeBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             HomeBtn.ForeColor = SystemColors.ButtonHighlight;
-            HomeBtn.Location = new Point(899, 644);
+            HomeBtn.Location = new Point(1461, 1030);
+            HomeBtn.Margin = new Padding(5);
             HomeBtn.Name = "HomeBtn";
-            HomeBtn.Size = new Size(125, 56);
+            HomeBtn.Size = new Size(203, 90);
             HomeBtn.TabIndex = 22;
             HomeBtn.Text = "HOME";
             HomeBtn.UseVisualStyleBackColor = false;
@@ -245,9 +228,10 @@
             CrossBtn.FlatStyle = FlatStyle.Popup;
             CrossBtn.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CrossBtn.ForeColor = SystemColors.ButtonHighlight;
-            CrossBtn.Location = new Point(1401, 12);
+            CrossBtn.Location = new Point(2277, 19);
+            CrossBtn.Margin = new Padding(5);
             CrossBtn.Name = "CrossBtn";
-            CrossBtn.Size = new Size(59, 56);
+            CrossBtn.Size = new Size(96, 90);
             CrossBtn.TabIndex = 23;
             CrossBtn.Text = "X";
             CrossBtn.UseVisualStyleBackColor = false;
@@ -255,34 +239,31 @@
             // 
             // Doctor
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(1472, 709);
+            ClientSize = new Size(2392, 1134);
             Controls.Add(CrossBtn);
             Controls.Add(HomeBtn);
             Controls.Add(ResetBtn);
             Controls.Add(UpdateBtn);
             Controls.Add(AddBtn);
             Controls.Add(DelBtn);
-            Controls.Add(dataGridView1);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox3);
-            Controls.Add(textBox4);
-            Controls.Add(textBox1);
+            Controls.Add(GenderComboBox);
+            Controls.Add(doctorNameTextBox);
+            Controls.Add(expTextBox);
+            Controls.Add(licenceTextBox);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(5);
             Name = "Doctor";
             Text = "Doctor";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -291,17 +272,14 @@
 
         private PictureBox pictureBox2;
         private Label label1;
-        private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBox1;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private ComboBox comboBox1;
-        private DataGridView dataGridView1;
+        private TextBox licenceTextBox;
+        private TextBox expTextBox;
+        private TextBox doctorNameTextBox;
+        private ComboBox GenderComboBox;
         private Button DelBtn;
         private Button AddBtn;
         private Button UpdateBtn;
