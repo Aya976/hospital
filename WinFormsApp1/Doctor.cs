@@ -16,5 +16,17 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void CrossBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void HomeBtn_Click(object sender, EventArgs e)
+        {
+            Home obj = new Home();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

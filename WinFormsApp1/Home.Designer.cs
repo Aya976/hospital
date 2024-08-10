@@ -61,7 +61,7 @@
             pictureBox1.Image = Properties.Resources.png_transparent_computer_icons_home_house_home_angle_building_rectangle_thumbnail2;
             pictureBox1.Location = new Point(6, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(140, 79);
+            pictureBox1.Size = new Size(139, 119);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -71,7 +71,7 @@
             pictureBox2.Image = Properties.Resources.doctor;
             pictureBox2.Location = new Point(463, 56);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(127, 98);
+            pictureBox2.Size = new Size(127, 99);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -101,7 +101,7 @@
             pictureBox5.Image = Properties.Resources.patient;
             pictureBox5.Location = new Point(462, 171);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(128, 114);
+            pictureBox5.Size = new Size(128, 115);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 6;
             pictureBox5.TabStop = false;
@@ -112,7 +112,7 @@
             DocBtn.FlatStyle = FlatStyle.Popup;
             DocBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DocBtn.ForeColor = SystemColors.ButtonHighlight;
-            DocBtn.Location = new Point(628, 75);
+            DocBtn.Location = new Point(629, 75);
             DocBtn.Name = "DocBtn";
             DocBtn.Size = new Size(125, 56);
             DocBtn.TabIndex = 7;

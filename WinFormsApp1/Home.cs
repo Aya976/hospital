@@ -32,7 +32,8 @@ namespace WinFormsApp1
 
         private void CrossBtn_Click(object sender, EventArgs e)
         {
-            this.Close();      
+            this.Close(); 
+            //this 
         }
     }
 }
