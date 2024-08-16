@@ -66,9 +66,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.doctor;
-            pictureBox2.Location = new Point(463, 56);
+            pictureBox2.Location = new Point(752, 90);
+            pictureBox2.Margin = new Padding(5, 5, 5, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(127, 99);
+            pictureBox2.Size = new Size(206, 158);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -76,7 +77,8 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.power_;
-            pictureBox3.Location = new Point(462, 427);
+            pictureBox3.Location = new Point(751, 683);
+            pictureBox3.Margin = new Padding(5, 5, 5, 5);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(134, 96);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -86,7 +88,8 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.patient;
-            pictureBox5.Location = new Point(462, 231);
+            pictureBox5.Location = new Point(751, 274);
+            pictureBox5.Margin = new Padding(5, 5, 5, 5);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(128, 115);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -99,7 +102,8 @@
             DocBtn.FlatStyle = FlatStyle.Popup;
             DocBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DocBtn.ForeColor = SystemColors.ButtonHighlight;
-            DocBtn.Location = new Point(629, 75);
+            DocBtn.Location = new Point(1022, 120);
+            DocBtn.Margin = new Padding(5, 5, 5, 5);
             DocBtn.Name = "DocBtn";
             DocBtn.Size = new Size(125, 56);
             DocBtn.TabIndex = 7;
@@ -113,7 +117,8 @@
             PatientBtn.FlatStyle = FlatStyle.Popup;
             PatientBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             PatientBtn.ForeColor = SystemColors.ButtonHighlight;
-            PatientBtn.Location = new Point(637, 258);
+            PatientBtn.Location = new Point(1024, 322);
+            PatientBtn.Margin = new Padding(5, 5, 5, 5);
             PatientBtn.Name = "PatientBtn";
             PatientBtn.Size = new Size(125, 56);
             PatientBtn.TabIndex = 8;
@@ -127,7 +132,8 @@
             LogoutBtn.FlatStyle = FlatStyle.Popup;
             LogoutBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LogoutBtn.ForeColor = SystemColors.ButtonHighlight;
-            LogoutBtn.Location = new Point(630, 445);
+            LogoutBtn.Location = new Point(1024, 712);
+            LogoutBtn.Margin = new Padding(5, 5, 5, 5);
             LogoutBtn.Name = "LogoutBtn";
             LogoutBtn.Size = new Size(125, 56);
             LogoutBtn.TabIndex = 10;
@@ -141,7 +147,8 @@
             CrossBtn.FlatStyle = FlatStyle.Popup;
             CrossBtn.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CrossBtn.ForeColor = SystemColors.ButtonHighlight;
-            CrossBtn.Location = new Point(995, 9);
+            CrossBtn.Location = new Point(1617, 14);
+            CrossBtn.Margin = new Padding(5, 5, 5, 5);
             CrossBtn.Name = "CrossBtn";
             CrossBtn.Size = new Size(59, 56);
             CrossBtn.TabIndex = 11;
@@ -165,6 +172,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(5, 5, 5, 5);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";

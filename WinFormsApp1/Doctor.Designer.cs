@@ -34,17 +34,21 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            licenceTextBox = new TextBox();
-            expTextBox = new TextBox();
-            doctorNameTextBox = new TextBox();
-            GenderComboBox = new ComboBox();
+            textBox4 = new TextBox();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            comboBox1 = new ComboBox();
             DelBtn = new Button();
             AddBtn = new Button();
             UpdateBtn = new Button();
             ResetBtn = new Button();
             HomeBtn = new Button();
             CrossBtn = new Button();
+            dataGridView1 = new DataGridView();
+            label2 = new Label();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -107,15 +111,16 @@
             label6.TabIndex = 10;
             label6.Text = "MEDICAL LICENSCE NUMBER";
             // 
-            // licenceTextBox
+            // textBox4
             // 
             licenceTextBox.BackColor = SystemColors.ButtonHighlight;
-            licenceTextBox.Location = new Point(1046, 215);
+            licenceTextBox.Location = new Point(1700, 344);
+            licenceTextBox.Margin = new Padding(5);
             licenceTextBox.Name = "licenceTextBox";
-            licenceTextBox.Size = new Size(390, 27);
+            licenceTextBox.Size = new Size(631, 39);
             licenceTextBox.TabIndex = 12;
             // 
-            // expTextBox
+            // textBox3
             // 
             expTextBox.BackColor = SystemColors.ButtonHighlight;
             expTextBox.Location = new Point(668, 215);
@@ -123,7 +128,7 @@
             expTextBox.Size = new Size(306, 27);
             expTextBox.TabIndex = 13;
             // 
-            // doctorNameTextBox
+            // textBox2
             // 
             doctorNameTextBox.BackColor = SystemColors.ButtonHighlight;
             doctorNameTextBox.Location = new Point(200, 215);
@@ -131,7 +136,7 @@
             doctorNameTextBox.Size = new Size(225, 27);
             doctorNameTextBox.TabIndex = 15;
             // 
-            // GenderComboBox
+            // comboBox1
             // 
             GenderComboBox.FormattingEnabled = true;
             GenderComboBox.Items.AddRange(new object[] { "MALE", "FEMALE " });
@@ -152,6 +157,7 @@
             DelBtn.TabIndex = 18;
             DelBtn.Text = "DELETE";
             DelBtn.UseVisualStyleBackColor = false;
+            DelBtn.Click += DelBtn_Click;
             // 
             // AddBtn
             // 
@@ -179,6 +185,7 @@
             UpdateBtn.TabIndex = 20;
             UpdateBtn.Text = "UPDATE";
             UpdateBtn.UseVisualStyleBackColor = false;
+            UpdateBtn.Click += UpdateBtn_Click;
             // 
             // ResetBtn
             // 
@@ -192,6 +199,7 @@
             ResetBtn.TabIndex = 21;
             ResetBtn.Text = "RESET";
             ResetBtn.UseVisualStyleBackColor = false;
+            ResetBtn.Click += ResetBtn_Click;
             // 
             // HomeBtn
             // 
@@ -221,6 +229,38 @@
             CrossBtn.UseVisualStyleBackColor = false;
             CrossBtn.Click += CrossBtn_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = SystemColors.GradientActiveCaption;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(29, 438);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 82;
+            dataGridView1.Size = new Size(2161, 542);
+            dataGridView1.TabIndex = 24;
+            dataGridView1.DoubleClick += dataGridView1_DoubleClick;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft YaHei UI", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(92, 264);
+            label2.Margin = new Padding(5, 0, 5, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(71, 57);
+            label2.TabIndex = 25;
+            label2.Text = "ID";
+            label2.Click += label2_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.ButtonHighlight;
+            textBox1.Location = new Point(17, 342);
+            textBox1.Margin = new Padding(5);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(285, 39);
+            textBox1.TabIndex = 26;
+            // 
             // Doctor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -233,10 +273,10 @@
             Controls.Add(UpdateBtn);
             Controls.Add(AddBtn);
             Controls.Add(DelBtn);
-            Controls.Add(GenderComboBox);
-            Controls.Add(doctorNameTextBox);
-            Controls.Add(expTextBox);
-            Controls.Add(licenceTextBox);
+            Controls.Add(comboBox1);
+            Controls.Add(textBox2);
+            Controls.Add(textBox3);
+            Controls.Add(textBox4);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -247,6 +287,7 @@
             Name = "Doctor";
             Text = "  ";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -259,15 +300,18 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox licenceTextBox;
-        private TextBox expTextBox;
-        private TextBox doctorNameTextBox;
-        private ComboBox GenderComboBox;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private ComboBox comboBox1;
         private Button DelBtn;
         private Button AddBtn;
         private Button UpdateBtn;
         private Button ResetBtn;
         private Button HomeBtn;
         private Button CrossBtn;
+        private DataGridView dataGridView1;
+        private Label label2;
+        private TextBox textBox1;
     }
 }
