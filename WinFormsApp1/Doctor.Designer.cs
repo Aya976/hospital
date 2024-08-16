@@ -1,4 +1,6 @@
-﻿namespace WinFormsApp1
+﻿using System.Windows.Forms;
+
+namespace WinFormsApp1
 {
     partial class Doctor
     {
@@ -277,6 +279,7 @@
             Controls.Add(doctorNameTextBox);
             Controls.Add(expTextBox);
             Controls.Add(licenceTextBox);
+            Controls.Add(dataGridView1);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
