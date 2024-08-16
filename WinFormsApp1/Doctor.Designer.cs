@@ -49,6 +49,7 @@ namespace WinFormsApp1
             dataGridView1 = new DataGridView();
             label2 = new Label();
             textBox1 = new TextBox();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -57,8 +58,9 @@ namespace WinFormsApp1
             // 
             pictureBox2.Image = Properties.Resources.doctor;
             pictureBox2.Location = new Point(-3, 1);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(150, 118);
+            pictureBox2.Size = new Size(131, 88);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -67,9 +69,9 @@ namespace WinFormsApp1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft JhengHei UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(153, 76);
+            label1.Location = new Point(134, 57);
             label1.Name = "label1";
-            label1.Size = new Size(167, 43);
+            label1.Size = new Size(132, 35);
             label1.TabIndex = 5;
             label1.Text = "DOCTOR";
             // 
@@ -77,9 +79,9 @@ namespace WinFormsApp1
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(200, 165);
+            label3.Location = new Point(175, 124);
             label3.Name = "label3";
-            label3.Size = new Size(225, 38);
+            label3.Size = new Size(178, 30);
             label3.TabIndex = 7;
             label3.Text = " DOCTOR NAME";
             // 
@@ -87,9 +89,9 @@ namespace WinFormsApp1
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(459, 165);
+            label4.Location = new Point(402, 124);
             label4.Name = "label4";
-            label4.Size = new Size(133, 38);
+            label4.Size = new Size(103, 30);
             label4.TabIndex = 8;
             label4.Text = " GENDER";
             // 
@@ -97,9 +99,9 @@ namespace WinFormsApp1
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(668, 165);
+            label5.Location = new Point(584, 124);
             label5.Name = "label5";
-            label5.Size = new Size(306, 38);
+            label5.Size = new Size(240, 30);
             label5.TabIndex = 9;
             label5.Text = "YEARS OF EXPERIENCE";
             // 
@@ -107,44 +109,47 @@ namespace WinFormsApp1
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(1046, 165);
+            label6.Location = new Point(915, 124);
             label6.Name = "label6";
-            label6.Size = new Size(390, 38);
+            label6.Size = new Size(304, 30);
             label6.TabIndex = 10;
             label6.Text = "MEDICAL LICENSCE NUMBER";
             // 
             // licenceTextBox
             // 
             licenceTextBox.BackColor = SystemColors.ButtonHighlight;
-            licenceTextBox.Location = new Point(1046, 215);
-            licenceTextBox.Margin = new Padding(5);
+            licenceTextBox.Location = new Point(915, 161);
+            licenceTextBox.Margin = new Padding(4, 4, 4, 4);
             licenceTextBox.Name = "licenceTextBox";
-            licenceTextBox.Size = new Size(631, 39);
+            licenceTextBox.Size = new Size(553, 23);
             licenceTextBox.TabIndex = 12;
             // 
             // expTextBox
             // 
             expTextBox.BackColor = SystemColors.ButtonHighlight;
-            expTextBox.Location = new Point(668, 215);
+            expTextBox.Location = new Point(584, 161);
+            expTextBox.Margin = new Padding(3, 2, 3, 2);
             expTextBox.Name = "expTextBox";
-            expTextBox.Size = new Size(306, 27);
+            expTextBox.Size = new Size(268, 23);
             expTextBox.TabIndex = 13;
             // 
             // doctorNameTextBox
             // 
             doctorNameTextBox.BackColor = SystemColors.ButtonHighlight;
-            doctorNameTextBox.Location = new Point(200, 215);
+            doctorNameTextBox.Location = new Point(175, 161);
+            doctorNameTextBox.Margin = new Padding(3, 2, 3, 2);
             doctorNameTextBox.Name = "doctorNameTextBox";
-            doctorNameTextBox.Size = new Size(225, 27);
+            doctorNameTextBox.Size = new Size(197, 23);
             doctorNameTextBox.TabIndex = 15;
             // 
             // GenderComboBox
             // 
             GenderComboBox.FormattingEnabled = true;
             GenderComboBox.Items.AddRange(new object[] { "MALE", "FEMALE " });
-            GenderComboBox.Location = new Point(459, 214);
+            GenderComboBox.Location = new Point(402, 160);
+            GenderComboBox.Margin = new Padding(3, 2, 3, 2);
             GenderComboBox.Name = "GenderComboBox";
-            GenderComboBox.Size = new Size(133, 28);
+            GenderComboBox.Size = new Size(117, 23);
             GenderComboBox.TabIndex = 16;
             // 
             // DelBtn
@@ -153,9 +158,10 @@ namespace WinFormsApp1
             DelBtn.FlatStyle = FlatStyle.Popup;
             DelBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DelBtn.ForeColor = SystemColors.ButtonHighlight;
-            DelBtn.Location = new Point(445, 644);
+            DelBtn.Location = new Point(389, 483);
+            DelBtn.Margin = new Padding(3, 2, 3, 2);
             DelBtn.Name = "DelBtn";
-            DelBtn.Size = new Size(125, 56);
+            DelBtn.Size = new Size(109, 42);
             DelBtn.TabIndex = 18;
             DelBtn.Text = "DELETE";
             DelBtn.UseVisualStyleBackColor = false;
@@ -167,9 +173,10 @@ namespace WinFormsApp1
             AddBtn.FlatStyle = FlatStyle.Popup;
             AddBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AddBtn.ForeColor = SystemColors.ButtonHighlight;
-            AddBtn.Location = new Point(23, 644);
+            AddBtn.Location = new Point(20, 483);
+            AddBtn.Margin = new Padding(3, 2, 3, 2);
             AddBtn.Name = "AddBtn";
-            AddBtn.Size = new Size(125, 56);
+            AddBtn.Size = new Size(109, 42);
             AddBtn.TabIndex = 19;
             AddBtn.Text = "ADD";
             AddBtn.UseVisualStyleBackColor = false;
@@ -181,9 +188,10 @@ namespace WinFormsApp1
             UpdateBtn.FlatStyle = FlatStyle.Popup;
             UpdateBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UpdateBtn.ForeColor = SystemColors.ButtonHighlight;
-            UpdateBtn.Location = new Point(234, 644);
+            UpdateBtn.Location = new Point(205, 483);
+            UpdateBtn.Margin = new Padding(3, 2, 3, 2);
             UpdateBtn.Name = "UpdateBtn";
-            UpdateBtn.Size = new Size(125, 56);
+            UpdateBtn.Size = new Size(109, 42);
             UpdateBtn.TabIndex = 20;
             UpdateBtn.Text = "UPDATE";
             UpdateBtn.UseVisualStyleBackColor = false;
@@ -195,9 +203,10 @@ namespace WinFormsApp1
             ResetBtn.FlatStyle = FlatStyle.Popup;
             ResetBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ResetBtn.ForeColor = SystemColors.ButtonHighlight;
-            ResetBtn.Location = new Point(685, 644);
+            ResetBtn.Location = new Point(599, 483);
+            ResetBtn.Margin = new Padding(3, 2, 3, 2);
             ResetBtn.Name = "ResetBtn";
-            ResetBtn.Size = new Size(125, 56);
+            ResetBtn.Size = new Size(109, 42);
             ResetBtn.TabIndex = 21;
             ResetBtn.Text = "RESET";
             ResetBtn.UseVisualStyleBackColor = false;
@@ -209,9 +218,10 @@ namespace WinFormsApp1
             HomeBtn.FlatStyle = FlatStyle.Popup;
             HomeBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             HomeBtn.ForeColor = SystemColors.ButtonHighlight;
-            HomeBtn.Location = new Point(899, 644);
+            HomeBtn.Location = new Point(787, 483);
+            HomeBtn.Margin = new Padding(3, 2, 3, 2);
             HomeBtn.Name = "HomeBtn";
-            HomeBtn.Size = new Size(125, 56);
+            HomeBtn.Size = new Size(109, 42);
             HomeBtn.TabIndex = 22;
             HomeBtn.Text = "HOME";
             HomeBtn.UseVisualStyleBackColor = false;
@@ -223,9 +233,10 @@ namespace WinFormsApp1
             CrossBtn.FlatStyle = FlatStyle.Popup;
             CrossBtn.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CrossBtn.ForeColor = SystemColors.ButtonHighlight;
-            CrossBtn.Location = new Point(1401, 12);
+            CrossBtn.Location = new Point(1226, 9);
+            CrossBtn.Margin = new Padding(3, 2, 3, 2);
             CrossBtn.Name = "CrossBtn";
-            CrossBtn.Size = new Size(59, 56);
+            CrossBtn.Size = new Size(52, 42);
             CrossBtn.TabIndex = 23;
             CrossBtn.Text = "X";
             CrossBtn.UseVisualStyleBackColor = false;
@@ -235,10 +246,11 @@ namespace WinFormsApp1
             // 
             dataGridView1.BackgroundColor = SystemColors.GradientActiveCaption;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(29, 438);
+            dataGridView1.Location = new Point(25, 328);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.Size = new Size(2161, 542);
+            dataGridView1.Size = new Size(1891, 406);
             dataGridView1.TabIndex = 24;
             dataGridView1.DoubleClick += dataGridView1_DoubleClick;
             // 
@@ -260,15 +272,26 @@ namespace WinFormsApp1
             textBox1.Location = new Point(17, 342);
             textBox1.Margin = new Padding(5);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(285, 39);
+            textBox1.Size = new Size(285, 23);
             textBox1.TabIndex = 26;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Yu Gothic UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(69, 128);
+            label7.Name = "label7";
+            label7.Size = new Size(41, 30);
+            label7.TabIndex = 25;
+            label7.Text = " ID";
             // 
             // Doctor
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(1490, 689);
+            ClientSize = new Size(1304, 517);
+            Controls.Add(label7);
             Controls.Add(CrossBtn);
             Controls.Add(HomeBtn);
             Controls.Add(ResetBtn);
@@ -287,6 +310,7 @@ namespace WinFormsApp1
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Doctor";
             Text = "  ";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -316,5 +340,6 @@ namespace WinFormsApp1
         private DataGridView dataGridView1;
         private Label label2;
         private TextBox textBox1;
+        private Label label7;
     }
 }

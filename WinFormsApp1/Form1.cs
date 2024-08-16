@@ -24,7 +24,7 @@ namespace WinFormsApp1
             {
                 MessageBox.Show("Missing Information");
             }
-            else if(Admin.Text == "Admin" && Password.Text == "Password")
+            else if(Admin.Text == "moustafa" && Password.Text == "wahdan")
             {
                 Home obj = new Home();
                 obj.Show();
