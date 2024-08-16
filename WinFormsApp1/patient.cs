@@ -109,7 +109,7 @@ namespace WinFormsApp1
                 else
                 {
                     con.Open();
-                    string query = "update Patient set PName =@PocName , PAddress= @PAddress , PAge=@PAge, PPhone= @PPhone, PGen=@PGen, BloodGroup=@BloodGroup, MajorDisease=@MajorDisease where PId =@PId";
+                    string query = "update Patient set PName =@PName , PAddress= @PAddress , PAge=@PAge, PPhone= @PPhone, PGen=@PGen, BloodGroup=@BloodGroup, MajorDisease=@MajorDisease where PId =@PId";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@PName", textBox2.Text);
                     cmd.Parameters.AddWithValue("@PAddress", textBox3.Text);

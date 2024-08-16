@@ -60,14 +60,14 @@ namespace WinFormsApp1
         {
             try
             {
-                if (textBox1.Text == " " || doctorNameTextBox.Text == " " || GenderComboBox.Text == " " || expTextBox.Text == " " || licenceTextBox.Text == " ")
+                if (textBox2.Text == " " || doctorNameTextBox.Text == " " || GenderComboBox.Text == " " || expTextBox.Text == " " || licenceTextBox.Text == " ")
                 {
                     MessageBox.Show("Missing Information");
                 }
                 else
                 {
                     con.Open();
-                    string query = "insert into Doctor Values(' " + textBox1.Text + " ', ' " + doctorNameTextBox.Text + " ' , ' " + GenderComboBox.Text + " ' , ' " + expTextBox.Text + " ' , ' " + licenceTextBox.Text + " ' )";
+                    string query = "insert into Doctor Values(' " + textBox2.Text + " ', ' " + doctorNameTextBox.Text + " ' , ' " + GenderComboBox.Text + " ' , ' " + expTextBox.Text + " ' , ' " + licenceTextBox.Text + " ' )";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     con.Close();
@@ -96,7 +96,7 @@ namespace WinFormsApp1
 
         private void ResetBtn_Click(object sender, EventArgs e)
         {
-            textBox1.Text = " ";
+            textBox2.Text = " ";
             doctorNameTextBox.Text = " ";
             GenderComboBox.Text = " ";
             expTextBox.Text = " ";
@@ -107,14 +107,14 @@ namespace WinFormsApp1
         {
             try
             {
-                if (textBox1.Text == " ")
+                if (textBox2.Text == " ")
                 {
                     MessageBox.Show("Enter the Doctor Id");
                 }
                 else
                 {
                     con.Open();
-                    string query = "delete from Doctor where Id ='" + textBox1.Text + "';";
+                    string query = "delete from Doctor where Id ='" + textBox2.Text + "';";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     con.Close();
@@ -141,7 +141,7 @@ namespace WinFormsApp1
         {
             try
             {
-                if (textBox1.Text == " " || doctorNameTextBox.Text == " " || GenderComboBox.Text == " " || expTextBox.Text == " " || licenceTextBox.Text == " ")
+                if (textBox2.Text == " " || doctorNameTextBox.Text == " " || GenderComboBox.Text == " " || expTextBox.Text == " " || licenceTextBox.Text == " ")
                 {
                     MessageBox.Show("Missing Information");
                 }
@@ -154,7 +154,7 @@ namespace WinFormsApp1
                     cmd.Parameters.AddWithValue("@DocGen", GenderComboBox.Text);
                     cmd.Parameters.AddWithValue("@Experience", expTextBox.Text);
                     cmd.Parameters.AddWithValue("@Licensce", licenceTextBox.Text);
-                    cmd.Parameters.AddWithValue("@Id", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@Id", textBox2.Text);
                     cmd.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Record update successfully");
@@ -175,7 +175,7 @@ namespace WinFormsApp1
         {
             try
             {
-                textBox1.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                textBox2.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                 doctorNameTextBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
                 GenderComboBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
                 expTextBox.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();

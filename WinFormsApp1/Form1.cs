@@ -21,10 +21,10 @@ namespace WinFormsApp1
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             if (Admin.Text== "" && Password.Text== " ")
-            {
+            { 
                 MessageBox.Show("Missing Information");
             }
-            else if(Admin.Text == "moustafa" && Password.Text == "wahdan")
+            else if(Admin.Text == "Moustafa" && Password.Text == "Wahdan")
             {
                 Home obj = new Home();
                 obj.Show();
