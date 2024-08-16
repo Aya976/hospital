@@ -41,7 +41,7 @@ namespace WinFormsApp1
 
         private void PatientBtn_Click(object sender, EventArgs e)
         {
-            patient obj = new patient();
+            Patient obj = new Patient();
             obj.Show();
             this.Hide();
         }
