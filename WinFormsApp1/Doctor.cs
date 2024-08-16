@@ -60,14 +60,14 @@ namespace WinFormsApp1
         {
             try
             {
-                if (textBox1.Text == " " || textBox2.Text == " " || comboBox1.Text == " " || textBox3.Text == " " || textBox4.Text == " ")
+                if (textBox1.Text == " " || doctorNameTextBox.Text == " " || GenderComboBox.Text == " " || expTextBox.Text == " " || licenceTextBox.Text == " ")
                 {
                     MessageBox.Show("Missing Information");
                 }
                 else
                 {
                     con.Open();
-                    string query = "insert into Doctor Values(' " + textBox1.Text + " ', ' " + textBox2.Text + " ' , ' " + comboBox1.Text + " ' , ' " + textBox3.Text + " ' , ' " + textBox4.Text + " ' )";
+                    string query = "insert into Doctor Values(' " + textBox1.Text + " ', ' " + doctorNameTextBox.Text + " ' , ' " + GenderComboBox.Text + " ' , ' " + expTextBox.Text + " ' , ' " + licenceTextBox.Text + " ' )";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     con.Close();
@@ -97,10 +97,10 @@ namespace WinFormsApp1
         private void ResetBtn_Click(object sender, EventArgs e)
         {
             textBox1.Text = " ";
-            textBox2.Text = " ";
-            comboBox1.Text = " ";
-            textBox3.Text = " ";
-            textBox4.Text = " ";
+            doctorNameTextBox.Text = " ";
+            GenderComboBox.Text = " ";
+            expTextBox.Text = " ";
+            licenceTextBox.Text = " ";
         }
 
         private void DelBtn_Click(object sender, EventArgs e)
@@ -141,7 +141,7 @@ namespace WinFormsApp1
         {
             try
             {
-                if (textBox1.Text == " " || textBox2.Text == " " || comboBox1.Text == " " || textBox3.Text == " " || textBox4.Text == " ")
+                if (textBox1.Text == " " || doctorNameTextBox.Text == " " || GenderComboBox.Text == " " || expTextBox.Text == " " || licenceTextBox.Text == " ")
                 {
                     MessageBox.Show("Missing Information");
                 }
@@ -150,10 +150,10 @@ namespace WinFormsApp1
                     con.Open();
                     string query = "update Doctor set DocName =@DocName , DocGen= @DocGen , Experience=@Experience, Licensce= @Licensce where Id =@Id";
                     SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@DocName", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@DocGen", comboBox1.Text);
-                    cmd.Parameters.AddWithValue("@Experience", textBox3.Text);
-                    cmd.Parameters.AddWithValue("@Licensce", textBox4.Text);
+                    cmd.Parameters.AddWithValue("@DocName", doctorNameTextBox.Text);
+                    cmd.Parameters.AddWithValue("@DocGen", GenderComboBox.Text);
+                    cmd.Parameters.AddWithValue("@Experience", expTextBox.Text);
+                    cmd.Parameters.AddWithValue("@Licensce", licenceTextBox.Text);
                     cmd.Parameters.AddWithValue("@Id", textBox1.Text);
                     cmd.ExecuteNonQuery();
                     con.Close();
@@ -176,10 +176,10 @@ namespace WinFormsApp1
             try
             {
                 textBox1.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                comboBox1.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                textBox3.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                textBox4.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                doctorNameTextBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                GenderComboBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                expTextBox.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                licenceTextBox.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
             }
             catch (Exception ex)
             {

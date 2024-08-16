@@ -12,9 +12,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormsApp1
 {
-    public partial class patient : Form
+    public partial class Patient : Form
     {
-        public patient()
+        public Patient()
         {
             InitializeComponent();
             DisplayPatient();

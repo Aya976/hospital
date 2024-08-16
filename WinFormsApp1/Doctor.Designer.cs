@@ -34,10 +34,10 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            comboBox1 = new ComboBox();
+            licenceTextBox = new TextBox();
+            expTextBox = new TextBox();
+            doctorNameTextBox = new TextBox();
+            GenderComboBox = new ComboBox();
             DelBtn = new Button();
             AddBtn = new Button();
             UpdateBtn = new Button();
@@ -111,16 +111,16 @@
             label6.TabIndex = 10;
             label6.Text = "MEDICAL LICENSCE NUMBER";
             // 
-            // textBox4
+            // licenceTextBox
             // 
             licenceTextBox.BackColor = SystemColors.ButtonHighlight;
-            licenceTextBox.Location = new Point(1700, 344);
+            licenceTextBox.Location = new Point(1046, 215);
             licenceTextBox.Margin = new Padding(5);
             licenceTextBox.Name = "licenceTextBox";
             licenceTextBox.Size = new Size(631, 39);
             licenceTextBox.TabIndex = 12;
             // 
-            // textBox3
+            // expTextBox
             // 
             expTextBox.BackColor = SystemColors.ButtonHighlight;
             expTextBox.Location = new Point(668, 215);
@@ -128,7 +128,7 @@
             expTextBox.Size = new Size(306, 27);
             expTextBox.TabIndex = 13;
             // 
-            // textBox2
+            // doctorNameTextBox
             // 
             doctorNameTextBox.BackColor = SystemColors.ButtonHighlight;
             doctorNameTextBox.Location = new Point(200, 215);
@@ -136,7 +136,7 @@
             doctorNameTextBox.Size = new Size(225, 27);
             doctorNameTextBox.TabIndex = 15;
             // 
-            // comboBox1
+            // GenderComboBox
             // 
             GenderComboBox.FormattingEnabled = true;
             GenderComboBox.Items.AddRange(new object[] { "MALE", "FEMALE " });
@@ -273,10 +273,10 @@
             Controls.Add(UpdateBtn);
             Controls.Add(AddBtn);
             Controls.Add(DelBtn);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox3);
-            Controls.Add(textBox4);
+            Controls.Add(GenderComboBox);
+            Controls.Add(doctorNameTextBox);
+            Controls.Add(expTextBox);
+            Controls.Add(licenceTextBox);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -300,10 +300,10 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private ComboBox comboBox1;
+        private TextBox licenceTextBox;
+        private TextBox expTextBox;
+        private TextBox doctorNameTextBox;
+        private ComboBox GenderComboBox;
         private Button DelBtn;
         private Button AddBtn;
         private Button UpdateBtn;
